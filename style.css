@@ -1,0 +1,115 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: url('snacksbox.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Overlay background */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+  }
+  
+  /* Main container */
+  .container {
+    position: relative;
+    z-index: 2;
+    padding: 0 20px; /* Removed top/bottom padding to eliminate white space */
+  }
+  
+  /* Header style */
+  .painted-header {
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+  }
+  
+  .painted-header h1 {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 3em;
+    padding: 15px 40px;
+    border-radius: 40px;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 30%, 100% 70%, 95% 100%, 5% 100%, 0% 70%, 0% 30%);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    margin: 0 auto;
+  }
+  
+  .painted-header .tagline {
+    font-style: italic;
+    font-size: 1.4em;
+    margin-top: 15px;
+    color: #fefefe;
+    font-family: 'Patrick Hand', cursive;
+    background: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    animation: fadeInUp 1.2s ease-in-out;
+  }
+  
+  
+  /* Navigation bar */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #ffd54f;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+  
+  nav a:hover {
+    color: #ffd54f;
+  }
+  

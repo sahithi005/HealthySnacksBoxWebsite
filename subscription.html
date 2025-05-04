@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subscription Plans - Healthy Snack Box</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to right, #f1f8e9, #e0f7fa);
+      padding: 60px 20px;
+      color: #37474f;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #00796b;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      color: #546e7a;
+    }
+
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .plan {
+      background: #f1f8e9;
+      border: 2px solid #aed581;
+      border-radius: 15px;
+      padding: 30px 25px;
+      width: 260px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .plan:hover {
+      transform: scale(1.05);
+      border-color: #7cb342;
+    }
+
+    .plan h3 {
+      font-size: 1.5em;
+      color: #558b2f;
+      margin-bottom: 10px;
+    }
+
+    .plan p {
+      font-size: 1em;
+      color: #607d8b;
+    }
+
+    .price {
+      font-size: 1.2em;
+      color: #33691e;
+      margin: 15px 0;
+    }
+
+    .back-link {
+      display: block;
+      margin: 40px auto 0;
+      width: max-content;
+      background: #4db6ac;
+      padding: 12px 24px;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+
+    .back-link:hover {
+      background: #00796b;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Subscription Plans</h1>
+    <p>Get a box of handpicked, healthy snacks delivered to your door every month. Choose the plan that suits your lifestyle!</p>
+
+    <div class="plans">
+      <div class="plan">
+        <h3>Starter Plan</h3>
+        <p>Perfect for individuals exploring healthy snacking.</p>
+        <div class="price">₹499 / month</div>
+      </div>
+
+      <div class="plan">
+        <h3>Family Plan</h3>
+        <p>Enough to share – ideal for families and roommates.</p>
+        <div class="price">₹999 / month</div>
+      </div>
+
+      <div class="plan">
+        <h3>Ultimate Plan</h3>
+        <p>All-in snacks for fitness freaks and health enthusiasts.</p>
+        <div class="price">₹1499 / month</div>
+      </div>
+    </div>
+
+    <a class="back-link" href="index.html">← Back to Home</a>
+  </div>
+
+</body>
+</html>
